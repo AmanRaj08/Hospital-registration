@@ -75,7 +75,7 @@ public class App extends Application {
                     try {
                         Class c1 = Class.forName("com.mysql.cj.jdbc.Driver");
                         String user = "root";
-                        String pass = "1234";
+                        String pass = "";
                         final String db_url = "jdbc:mysql://localhost/patient";
                         Connection con = DriverManager.getConnection(db_url, user, pass);
                         Statement stmt = (Statement) con.createStatement();
@@ -153,7 +153,7 @@ public class App extends Application {
                     try {
                         Class c1 = Class.forName("com.mysql.cj.jdbc.Driver");
                         String user = "root";
-                        String pass = "1234";
+                        String pass = "";
                         final String db_url = "jdbc:mysql://localhost/patient";
                         Connection con = DriverManager.getConnection(db_url, user, pass);
                         Statement stmt = (Statement) con.createStatement();
@@ -182,9 +182,7 @@ public class App extends Application {
         });
         TableView<Person> table = new TableView<Person>();
         final ObservableList<Person> data = FXCollections.observableArrayList(new Person(id1, fn, ln, p, h, d, t),
-                new Person("1", "Aman", "Raj", "7061144522", "fracture", "2022-12-03", "13:00"),
-                new Person("2", "Mohit", "Ranjan", "6541328795", "dentist", "2022-10-23", "15:00"),
-                new Person("3", "Kishlay", "Abhimanyu", "9876543210", "fever", "2022-02-03", "09:00"));
+                new Person("1", "Aman", "Raj", "7061144522", "fracture", "2022-12-03", "13:00"));
         Button btn3 = new Button("Back");
         grid1.add(btn3, 0, 5);
         btn3.setOnAction(e -> window.setScene(scene1));
@@ -352,7 +350,7 @@ public class App extends Application {
                 try {
                     Class c1 = Class.forName("com.mysql.cj.jdbc.Driver");
                     String user = "root";
-                    String pass = "1234";
+                    String pass = "";
                     final String db_url = "jdbc:mysql://localhost/patient";
                     Connection con = DriverManager.getConnection(db_url, user, pass);
                     Statement stmt = (Statement) con.createStatement();
@@ -387,7 +385,7 @@ public class App extends Application {
                     HashMap hm = new HashMap<>();
                     Class c1 = Class.forName("com.mysql.cj.jdbc.Driver");
                     String user = "root";
-                    String pass = "1234";
+                    String pass = "";
                     final String db_url = "jdbc:mysql://localhost/patient";
                     Connection con = DriverManager.getConnection(db_url, user, pass);
                     Statement stmt = (Statement) con.createStatement();
@@ -413,7 +411,7 @@ public class App extends Application {
                 try {
                     Class c1 = Class.forName("com.mysql.cj.jdbc.Driver");
                     String user = "root";
-                    String pass = "1234";
+                    String pass = "";
                     final String db_url = "jdbc:mysql://localhost/patient";
                     Connection con = DriverManager.getConnection(db_url, user, pass);
                     Statement stmt = (Statement) con.createStatement();
